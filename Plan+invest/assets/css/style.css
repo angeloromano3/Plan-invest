@@ -1,0 +1,145 @@
+/* ================== ESTILOS GERAIS ================== */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #262729;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ================== HEADER / TOPO ================== */
+
+/* Título */
+header h2 {
+    letter-spacing: -0.5px;
+    cursor: pointer;
+}
+
+/* Header ocupando toda a largura */
+.header-full {
+    width: 100%;
+    background-color: #cacaca;     /* fundo cinza claro */
+    padding: 25px 40px;            /* espaçamento vertical + LATERAL */
+    border-radius: 10px;           /* mantém o estilo arredondado */
+}
+
+/* Botões (Minha Conta e Notificação) */
+.btn-white {
+    background-color: #262729;
+    color: #fff;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Ícones dentro dos botões do header */
+.btn-white i {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+/* ================== CARDS DO RESUMO FINANCEIRO ================== */
+
+.p-3.border.rounded {
+    border-width: 1px !important;
+    border-color: #dcdcdc !important;
+    border-style: solid !important;
+    cursor: pointer;
+}
+/* Alinha a área do imagem/gráfico com o restante da página */
+.grafico-container {
+    display: flex;
+    justify-content: center;     /* centraliza horizontalmente */
+    padding-left: 10px;          /* ajusta igual as transações */
+    padding-right: 10px;
+}
+
+/* Ajusta tamanho e borda da imagem/gráfico */
+.grafico-img {
+    border-width: 1px !important;
+    border-color: #dcdcdc !important;
+    border-style: solid !important;
+    border-radius: 15px;
+}
+
+/* ================== TRANSAÇÕES RECENTES ================== */
+
+/* Caixa que envolve TODAS as transações */
+.transacoes-box {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 10px;
+}
+
+/* Título "Transações Recentes" */
+.transacoes-box h4 {
+    font-weight: 700 !important;
+    margin-bottom: 50px !important;
+}
+
+/* Cada linha de transação */
+.transacao-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+/* Remove borda do último item */
+.transacao-item:last-child {
+    border-bottom: none;
+}
+
+/* Valor da transação (lado direito) */
+.valor-transacao {
+    min-width: 120px;
+    text-align: right;
+    font-size: 16px;
+}
+
+/* Círculo contendo os ícones */
+.icone-transacao {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Ícones individuais */
+
+/* Ícone de Recebimento */
+.icone-recebimento {
+    background-color: #28a745; /* verde */
+    font-size: 24px;
+}
+
+/* Ícone de Compra */
+.icone-compra {
+    background-color: #007bff; /* azul */
+    font-size: 26px;
+}
+
+/* Ícone de Assinatura */
+.icone-assinatura {
+    background-color: #ffc107; /* amarelo */
+    font-size: 24px;
+}
+
+/* Ícone de Transferência */
+.icone-transferencia {
+    background-color: #6f42c1; /* roxo */
+    font-size: 25px;
+}

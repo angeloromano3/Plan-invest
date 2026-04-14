@@ -13,6 +13,10 @@ public class Login extends Usuario {
         this.usuario = usuario;
         this.senha = senha;
     }
+    @Override
+    public void cadastrarUsuario() {
+        System.out.println("Cadastrando usuário com login e senha específicos");
+    }
 
     // Métodos do login
     public void realizarLogin() {

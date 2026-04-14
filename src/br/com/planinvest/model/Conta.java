@@ -1,51 +1,51 @@
 package br.com.planinvest.model;
 
+import java.util.Date;
+
 public class Conta {
 
-    // Atributos da conta
     private int idConta;
-    private double saldo;
-    private String tipoConta;
+    private int idUsuario;
+    private String nmConta;
+    private String tpConta;
+    private String nmInstituicao;
+    private double valSaldoInicial;
+    private Date dtCriacao;
+    private String stAtiva;
 
-    // Construtor da classe Conta
-    public Conta(int idConta, double saldo, String tipoConta) {
+    public Conta(int idConta, int idUsuario, String nmConta, String tpConta,
+                 String nmInstituicao, double valSaldoInicial, Date dtCriacao, String stAtiva) {
         this.idConta = idConta;
-        this.saldo = saldo;
-        this.tipoConta = tipoConta;
+        this.idUsuario = idUsuario;
+        this.nmConta = nmConta;
+        this.tpConta = tpConta;
+        this.nmInstituicao = nmInstituicao;
+        this.valSaldoInicial = valSaldoInicial;
+        this.dtCriacao = dtCriacao;
+        this.stAtiva = stAtiva;
     }
 
-    // Métodos da conta "o que ela faz? consulta e atualiza saldo"
-    public void consultarSaldo() {
-        System.out.println("Consultando saldo da conta");
-    }
+    public int getIdConta() { return idConta; }
+    public void setIdConta(int idConta) { this.idConta = idConta; }
 
-    public void atualizarSaldo() {
-        System.out.println("Atualizando saldo da conta");
-    }
+    public int getIdUsuario() { return idUsuario; }
+    public void setIdUsuario(int idUsuario) { this.idUsuario = idUsuario; }
 
-    // Getters e Setters para acessar e modificar os atributos
-    public int getIdConta() {
-        return idConta;
-    }
+    public String getNmConta() { return nmConta; }
+    public void setNmConta(String nmConta) { this.nmConta = nmConta; }
 
-    public void setIdConta(int idConta) {
-        this.idConta = idConta;
-    }
+    public String getTpConta() { return tpConta; }
+    public void setTpConta(String tpConta) { this.tpConta = tpConta; }
 
-    public double getSaldo() {
-        return saldo;
-    }
+    public String getNmInstituicao() { return nmInstituicao; }
+    public void setNmInstituicao(String nmInstituicao) { this.nmInstituicao = nmInstituicao; }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
+    public double getValSaldoInicial() { return valSaldoInicial; }
+    public void setValSaldoInicial(double valSaldoInicial) { this.valSaldoInicial = valSaldoInicial; }
 
-    public String getTipoConta() {
-        return tipoConta;
-    }
+    public Date getDtCriacao() { return dtCriacao; }
+    public void setDtCriacao(Date dtCriacao) { this.dtCriacao = dtCriacao; }
 
-    public void setTipoConta(String tipoConta) {
-        this.tipoConta = tipoConta;
-    }
-
+    public String getStAtiva() { return stAtiva; }
+    public void setStAtiva(String stAtiva) { this.stAtiva = stAtiva; }
 }

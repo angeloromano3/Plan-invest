@@ -1,5 +1,6 @@
 package br.com.planinvest.model;
 
+// Classe que representa o login do usuário no sistema Plan+Invest
 // Login herda os atributos e métodos de Usuario
 public class Login extends Usuario {
 

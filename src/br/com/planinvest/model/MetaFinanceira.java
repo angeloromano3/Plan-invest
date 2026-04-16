@@ -2,8 +2,9 @@ package br.com.planinvest.model;
 
 import java.util.Date;
 
+// Classe que representa uma meta financeira do usuário no sistema Plan+Invest
 public class MetaFinanceira {
-
+    // Atributos da meta financeira
     private int idMeta;
     private int idUsuario;
     private String nmMeta;
@@ -14,6 +15,7 @@ public class MetaFinanceira {
     private String stMeta;
     private String dsMeta;
 
+    // Construtor da classe MetaFinanceira
     public MetaFinanceira(int idMeta, int idUsuario, String nmMeta, double vlObjeto,
                           double vlAcumulado, Date dtInicio, Date dtPrazo,
                           String stMeta, String dsMeta) {
@@ -27,7 +29,7 @@ public class MetaFinanceira {
         this.stMeta = stMeta;
         this.dsMeta = dsMeta;
     }
-
+    // Getters e Setters para acessar e modificar os atributos
     public int getIdMeta() { return idMeta; }
     public void setIdMeta(int idMeta) { this.idMeta = idMeta; }
 

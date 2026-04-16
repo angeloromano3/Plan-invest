@@ -1,5 +1,6 @@
 package br.com.planinvest.model;
 
+// Classe que representa o usuário do sistema Plan+Invest
 public class Usuario {
 
     // Atributos do usuário

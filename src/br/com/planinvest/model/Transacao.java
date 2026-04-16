@@ -1,9 +1,10 @@
 package br.com.planinvest.model;
 
 import java.util.Date;
-
+// Classe que representa uma transação financeira do usuário no sistema Plan+Invest
 public class Transacao {
 
+    // Atributos da trasacao
     private int idTransacao;
     private int idConta;
     private int idUsuario;
@@ -14,6 +15,7 @@ public class Transacao {
     private String tpPagamento;
     private String flgRecorrente;
 
+    //Construtor da classe Transacao
     public Transacao(int idTransacao, int idConta, int idUsuario, String tpTransacao,
                      double vlTransacao, Date dtEfetivacao, String dsTransacao,
                      String tpPagamento, String flgRecorrente) {
@@ -27,7 +29,7 @@ public class Transacao {
         this.tpPagamento = tpPagamento;
         this.flgRecorrente = flgRecorrente;
     }
-
+    // Getters e Setters para acessar e modificar os atributos
     public int getIdTransacao() { return idTransacao; }
     public void setIdTransacao(int idTransacao) { this.idTransacao = idTransacao; }
 

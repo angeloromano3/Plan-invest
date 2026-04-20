@@ -14,7 +14,7 @@ public class TransacaoDAO {
         // SQL de inserção com os campos da tabela TRANSACAO
         String sql = "INSERT INTO TRANSACAO " +
                 "(ID_TRANSACAO, TP_TRANSACAO, VL_TRANSACAO, DT_EFETIVACAO, " +
-                "DS_TRANSACAO, TP_PAGAMENTO, FLG_RECORENTE, " +
+                "DS_TRANSACAO, TP_PAGAMENTO, FLG_RECORRENTE, " +
                 "CONTA_ID_CONTA, CATEGORIA_ID_CATEGORIA) " +
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
@@ -78,7 +78,7 @@ public class TransacaoDAO {
                         rs.getDate("DT_EFETIVACAO"),
                         rs.getString("DS_TRANSACAO"),
                         rs.getString("TP_PAGAMENTO"),
-                        rs.getString("FLG_RECORENTE")
+                        rs.getString("FLG_RECORRENTE")
                 );
                 transacoes.add(transacao);
             }

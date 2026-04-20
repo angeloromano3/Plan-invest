@@ -1,4 +1,4 @@
-package br.com.planinvest.dao;
+package br.com.planinvest.factory;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,5 +1,6 @@
 package br.com.planinvest.dao;
 
+import br.com.planinvest.factory.ConnectionFactory;
 import br.com.planinvest.model.Conta;
 import java.sql.*;
 import java.util.ArrayList;
